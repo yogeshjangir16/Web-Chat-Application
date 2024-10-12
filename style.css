@@ -1,0 +1,129 @@
+body {
+  background-color: rgb(234, 241, 244);
+  height: 100vh;
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+nav {
+  background-color: #4a90e2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  color: white;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  margin-right: 15px;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.container {
+  background-color: #f3f4f7;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px auto;
+  width: 80%;
+  height: 50vh;
+  overflow-y: auto;
+}
+
+.message {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  margin: 8px 0;
+  border: 1px solid #e0e0e0;
+  max-width: 70%;
+  display: inline-block;
+  word-wrap: break-word;
+}
+
+.left {
+  text-align: left;
+  float: left;
+  clear: both;
+}
+
+.right {
+  text-align: right;
+  float: right;
+  clear: both;
+  background-color: #daf8cb;
+}
+
+.send {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#messageInp {
+  width: 70%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+  font-size: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn {
+  cursor: pointer;
+  border-radius: 8px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #4caf50;
+  color: white;
+  font-size: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-right: 10px; 
+}
+
+.btn:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+.btn-search {
+  cursor: pointer;
+  border-radius: 8px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #f44336;
+  color: white;
+  font-size: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-search:hover {
+  background-color: #e53935;
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+    height: 40vh;
+  }
+
+  #messageInp {
+    width: 60%;
+  }
+
+  .btn, .btn-search {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
